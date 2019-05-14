@@ -8,7 +8,7 @@ def initialize(discount = 0)
 
 end
 
-  def add(item_name, price, quantity = 1)
+  def add_item(item_name, price, quantity = 1)
     if quantity > 1
       i = 0
       while i < quantity
@@ -29,7 +29,7 @@ end
       @total = @total - (@total * (@discount))
       "After the discount, the total comes out to be $#{@total.to_i}."
     else
-      "There is no discount to apply"
+      "There is no discount to apply."
     end
   end
 
